@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router"; // Add this import
+import { useRouter } from "expo-router";
 
 const AllCalls = () => {
-  const router = useRouter(); // Initialize the router
+  const router = useRouter();
 
   return (
     <SafeAreaView>
