@@ -4,6 +4,7 @@ import iconsSvg from "@/constants/icons";
 import { TabIcon } from "@/components/Tabs/TabIcon";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { PlusTab } from "./create";
+import { Compass, Search, Settings, User } from "lucide-react-native";
 
 const TabsLayout = () => {
   const insets = useSafeAreaInsets();
@@ -51,7 +52,7 @@ const TabsLayout = () => {
           title: "AllCalls",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={iconsSvg.ClipBoard} />
+            <TabIcon focused={focused} icon={iconsSvg.Compass} />
           ),
         }}
       />
@@ -72,7 +73,7 @@ const TabsLayout = () => {
           title: "Staff",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={iconsSvg.People} />
+            <TabIcon focused={focused} icon={iconsSvg.User} />
           ),
         }}
       />
@@ -82,7 +83,7 @@ const TabsLayout = () => {
           title: "Home",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={iconsSvg.Mail} />
+            <TabIcon focused={focused} icon={iconsSvg.Settings} />
           ),
         }}
       />
