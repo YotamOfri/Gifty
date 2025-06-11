@@ -39,7 +39,7 @@ export default function RootLayout() {
               <BottomSheetModalProvider>
                 <SheetProvider context="global">
                   <StatusBar translucent />
-                  <Stack screenOptions={{ headerShown: false }} />
+                  <Stack screenOptions={{ headerShown: false }} initialRouteName="welcome" />
                 </SheetProvider>
               </BottomSheetModalProvider>
             </GestureHandlerRootView>
