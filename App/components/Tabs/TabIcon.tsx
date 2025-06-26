@@ -11,7 +11,7 @@ export const TabIcon: React.FC<TabIconProps> = ({
   icon: IconComponent,
   title,
 }) => (
-  <View className="flex-1 flex flex-col gap-1 items-center mt-6">
+  <View className="flex-1 flex flex-col gap-1 items-center">
     <IconComponent height={22.5} width={22.5} isFocused={focused} />
     {title && (
       <Text

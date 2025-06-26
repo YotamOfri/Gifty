@@ -4,7 +4,7 @@ import iconsSvg from "@/constants/icons";
 import { TabIcon } from "@/components/Tabs/TabIcon";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { PlusTab } from "./create";
-import { Compass, Search, Settings, User } from "lucide-react-native";
+import { Compass, Search, Settings, User, Home } from "lucide-react-native";
 
 const TabsLayout = () => {
   const insets = useSafeAreaInsets();
@@ -42,7 +42,7 @@ const TabsLayout = () => {
           headerShown: false,
           animation: "none",
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={iconsSvg.People} />
+            <TabIcon focused={focused} icon={iconsSvg.People} title="Profile" />
           ),
         }}
       />
@@ -52,7 +52,7 @@ const TabsLayout = () => {
           title: "AllCalls",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={iconsSvg.Compass} />
+            <TabIcon focused={focused} icon={iconsSvg.Compass} title="Calls" />
           ),
         }}
       />
@@ -68,22 +68,22 @@ const TabsLayout = () => {
       />
 
       <Tabs.Screen
-        name="staff"
+        name="explore"
         options={{
-          title: "Staff",
+          title: "Explore",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={iconsSvg.User} />
+            <TabIcon focused={focused} icon={iconsSvg.User} title="Explore" />
           ),
         }}
       />
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Feed",
           headerShown: false,
-          tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={iconsSvg.Settings} />
+          tabBarIcon: ({ focused, color, size }) => (
+            <Home size={size} color={focused ? "#3b82f6" : "#6b7280"} />
           ),
         }}
       />

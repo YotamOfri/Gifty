@@ -40,7 +40,7 @@ const SignIn = () => {
     //   return setServerError(t(`validation.${response?.error}`));
     // if (response.status === 500)
     //   return setServerError(t("errors.server_error"));
-    router.replace("/organization-selection");
+    router.replace("/(root)/(tabs)");
   };
 
   // Helper function to translate error messages

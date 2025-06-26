@@ -1,9 +1,9 @@
 import { View, Text } from "react-native";
 
-const Staff = () => {
+const Explore = () => {
   <View>
-    <Text>Staff</Text>
+    <Text>Explore</Text>
   </View>;
 };
 
-export default Staff;
+export default Explore;
